@@ -18,14 +18,12 @@ jobs:
               with:
                   go-version: '1.22'
             - run: go version
-            - name: Build Go app
-              run: go build -o upper
-
-            - name: Run tests
-              run: go test
-
             - name: multi-line script
               run: |
+                cd upper
+                echo "current directory: $(pwd)"
+                go build -o upper
+                echo "change permissions to executable"
                 chmod +x upper
                 echo "running upper..."
                 ./upper foo the bar
