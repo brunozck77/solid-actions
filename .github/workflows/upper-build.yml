@@ -19,6 +19,8 @@ jobs:
                   go-version: '1.22'
             - run: go version
             - run: |
+                cd upper
+                pwd
                 ls
                 go build
                 ls
