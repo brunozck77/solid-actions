@@ -27,4 +27,5 @@ jobs:
                 echo "change permissions to executable"
                 chmod +x upper
                 echo "running upper..."
-                ./upper foo the bar
+                run: |
+                script -q -c "./upper foo the bar"
