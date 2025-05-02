@@ -18,7 +18,9 @@ jobs:
               with:
                   go-version: '1.22'
             - run: go version
-            - run: |
+            #new step named 'multi-line script' that runs a multi-line script
+            - name: multi-line script
+              run: |
                 cd upper
                 pwd
                 ls
