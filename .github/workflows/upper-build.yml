@@ -21,17 +21,11 @@ jobs:
             #new step named 'multi-line script' that runs a multi-line script
             - name: multi-line script
               run: |
-                echo 'cd upper:'
                 cd upper
-                echo 'pwd:'
                 pwd
-                echo 'ls:'
                 ls
-                echo 'go build:'
                 go build
-                echo 'ls:'
                 ls
-                echo 'go test:'
                 go test
-                echo './upper foo the bar:'
-                ./upper foo the bar
+                echo "runnning upper..."
+                ./upper/upper foo the bar
