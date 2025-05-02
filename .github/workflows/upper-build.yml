@@ -21,10 +21,9 @@ jobs:
             - name: multi-line script
               shell: bash
               run: |
-                cd upper
-                echo "current directory: $(pwd)"
                 go build -o upper
                 echo "change permissions to executable"
                 chmod +x upper
                 echo "running upper..."
                 script -q -c "./upper foo the bar"
+              working-directory: upper
