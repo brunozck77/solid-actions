@@ -28,4 +28,4 @@ jobs:
                 ls
                 go test
                 echo "runnning upper..."
-                ./upper/upper foo the bar
+                ./upper.exe foo the bar
