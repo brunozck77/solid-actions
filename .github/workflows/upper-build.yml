@@ -19,7 +19,7 @@ jobs:
                   #go-version: '1.22'
                   go-version-file: ./upper/go.mod
                   cache-dependency-path: ./upper/go.sum
-            - run: go mode download
+            - run: go mod download
               working-directory: upper
             - name: multi-line script
               shell: bash
